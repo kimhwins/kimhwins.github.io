@@ -79,7 +79,7 @@ body {
 
 #subtitle{
 	font-size: 8vh;
-	letter-spacing: 0.05vw;
+	letter-spacing: 0.08vw;
 	transform: scaleY(0.95);
 	margin-top: 2.25vh;
 /*	line-height: 12vh;*/
@@ -100,14 +100,8 @@ body {
 
 #social-media a{
 	margin: 0 1.75vw;
-/*	border-right: 2.5vw solid transparent;*/
 	text-decoration: none;
-	transition: 0.3s ease;
 }
-
-#social-media a:last-child{
-}
-
 
 .button{
 	background-repeat: no-repeat;
@@ -116,7 +110,7 @@ body {
     border-right: 0vw;
     height: 5vw;
     width: 5vw;
-    transition: 0.3s;
+    transition: 0.2s ease;
     display: inline-block;
 }
 
@@ -155,12 +149,58 @@ body {
 
 #arrow {
 	position: absolute;
-	bottom: 4.5%;
+	bottom: 0;
+	margin-bottom: 2.5%;
+	transition: 0.3s ease;
+}
+
+#arrow:hover{
+	transform: translate(0, -5px);
 }
 
 #projects {
-	margin: 0;
-	padding: 0;
+	padding: 7.5% 15%;
 	max-width: 100vw;
-	width: 100%;
+/*	background-color: #fbfbfb;*/
+}
+
+.banners{
+	max-width: 100%;
+    height: 48vh;
+	position: relative;
+ 	overflow: hidden;
+	display: block;
+
+	-webkit-filter: brightness(100%);
+	-moz-filter: brightness(100%);
+	-o-filter: brightness(100%);
+	-ms-filter: brightness(100%);
+	filter: brightness(100%);
+	transition: 0.3s;
+}
+
+.banners:hover{
+	-webkit-filter: brightness(70%);
+	-moz-filter: brightness(70%);
+	-o-filter: brightness(70%);
+	-ms-filter: brightness(70%);
+	filter: brightness(70%);
+	-moz-transform: scale(1.075);
+  -webkit-transform: scale(1.075);
+  transform: scale(1.075);
+}
+
+#daily-ui{
+	background-image: url('images/daily-ui.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bleh{
+/*	max-width: 70vw;
+    height: 48vh;*/
+	position: relative;
+ 	overflow: hidden;
+	display: block;
 }
