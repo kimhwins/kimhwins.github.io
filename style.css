@@ -24,7 +24,7 @@ body {
     url("fonts/quicksand-light-webfont.eot") format("eot");
 }
 
-@-webkit-keyframes fadeInDown {
+/*@-webkit-keyframes fadeInDown {
     0% {
         opacity: 0;
         -webkit-transform: translateY(-20px);
@@ -33,7 +33,7 @@ body {
         opacity: 1;
         -webkit-transform: translateY(0);
     }
-}
+}*/
          
 @keyframes fadeInDown {
     0% {
@@ -98,11 +98,11 @@ body {
 }
 
 .fadein{
-	-webkit-animation-name: fadeInDown;
+/*	-webkit-animation-name: fadeInDown;*/
     animation-name: fadeInDown;
-    -webkit-animation-duration: 1.5s;
+/*    -webkit-animation-duration: 1.5s;*/
     animation-duration: 1.5s;
-    -webkit-animation-fill-mode: both;
+/*    -webkit-animation-fill-mode: both;*/
     animation-fill-mode: both;
 }
 
