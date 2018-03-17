@@ -3,7 +3,6 @@
 	scroll-behavior: smooth;
 }
 
-
 body {
 	padding: 0;
 	margin: 0;
@@ -25,6 +24,28 @@ body {
     url("fonts/quicksand-light-webfont.eot") format("eot");
 }
 
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+         
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .header{
 	position: relative;
 	display: block;
@@ -37,13 +58,52 @@ body {
     height: 100vh;
 }
 
-.title{
+.navigation{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	margin: 2% 4.5%;
+}
+
+.navigation a{
+	font-family: 'Overpass', sans-serif;
+	color: #4d4d4d;
+	font-size: 3vh;
+	text-decoration: none;
+	letter-spacing: 0.05vw;
+	margin: 0 1.75vw;
+	transform: scaleY(0.925);
+}
+
+.nav-button {
+	transform: scaleY(0.925);
+}
+
+.float{
+	transition: transform 0.5s;
+}
+
+.float:hover{
+	transform: translate(0, -5px);
+}
+
+.headline{
 	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-size: 12vh;
 	flex-direction: column;
+}
+
+.fadein{
+	-webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 
 .text{
@@ -110,7 +170,7 @@ body {
     border-right: 0vw;
     height: 5vw;
     width: 5vw;
-    transition: 0.2s ease;
+    transition: 0.2s;
     display: inline-block;
 }
 
@@ -197,7 +257,7 @@ body {
     background-size: cover;
 }
 
-.bleh{
+.banner-container{
 /*	max-width: 70vw;
     height: 48vh;*/
 	position: relative;
