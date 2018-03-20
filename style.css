@@ -8,6 +8,11 @@ body {
 	margin: 0;
 }
 
+body:after{
+ 	display:none;
+ 	content: url(images/twitter-pink.png) url(images/linkedin-pink.png) url(images/github-pink.png) url(images/email-pink.png);
+}
+
 @font-face {
     font-family: "Quicksand Regular";
     src: url("fonts/Quicksand-Regular.otf");
