@@ -300,3 +300,66 @@ body:after{
     background-position: center;
     background-size: cover;
 }
+
+@media (max-width: 780px) {
+	.button{
+	    height: 8vw;
+	    width: 8vw;
+	}
+}
+
+@media (max-width: 700px) {
+	.button{
+	    height: 8vw;
+	    width: 8vw;
+	}
+
+	.column-1{
+		width: 100%;
+		padding-right: 0;
+	}
+
+	.column-2{
+		width: 100%;
+		padding-left: 0;
+		padding-top: 2.5%;
+	}
+}
+
+@media (max-width: 565px) {
+	.headline{
+		font-size: 10vh;
+	}
+
+	#subtitle{
+		font-size: 6vh;
+	}
+
+	#quicksand{
+		font-size: 6.5vh;
+	}
+
+	.button{
+	    height: 10vw;
+	    width: 10vw;
+	}
+}
+
+@media (max-width: 415px) {
+	.headline{
+		font-size: 8.5vh;
+	}
+
+	#subtitle{
+		font-size: 4.5vh;
+	}
+
+	#quicksand{
+		font-size: 5vh;
+	}
+
+	.button{
+	    height: 10vw;
+	    width: 10vw;
+	}
+}
