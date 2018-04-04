@@ -302,6 +302,13 @@ body:after{
 }
 
 @media (max-width: 780px) {
+	.headline{
+		font-size: 10vh;
+	}
+
+	#subtitle{
+		font-size: 6vh;
+	}
 	.button{
 	    height: 8vw;
 	    width: 8vw;
