@@ -137,9 +137,9 @@ body:after{
 }
 
 #quicksand{
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Quicksand Regular', sans-serif;
 	font-size: 8.5vh;
-	margin-top: -1%;
+	margin-top: 1%;
 	margin-right: -0.5%;
 /*	margin-left: 1%;*/
 }
