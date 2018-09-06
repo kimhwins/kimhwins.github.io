@@ -110,7 +110,7 @@ body:after{
 #nothing-dailyui{
 	width: 100%;
 	max-width: 100%;
-    height: 200px;
+    height: 12.25vw;
     	background-image: url('images/daily ui banner small.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -229,7 +229,7 @@ body:after{
 }
 
 .banners{
-    height: 400px;
+    height: 25.5vw;
 	display: block;
 	transition: all 0.2s;
 }
@@ -241,22 +241,27 @@ body:after{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 200px;
+    height: 12.25vw;
 }
 
 .banner-container{
 	position: relative;
 	width: 99.9%;
+	height: 25.5vw;
  	overflow: hidden;
 	display: block;
 	z-index: 3;
 	transition: 0.5s all;
 }
 
+#daily-ui-row{
+	height: 12.25vw;
+}
+
 #league{
 	width: 100%;
 	max-width: 100%;
-	background-image: url('images/league.png');
+	background-image: url('images/league-2.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -265,7 +270,7 @@ body:after{
 #iqvia{
 	width: 100%;
 	max-width: 100%;
-	background-image: url('images/iqvia.png');
+	background-image: url('images/iqvia-2.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -274,7 +279,8 @@ body:after{
 #sybil{
 	width: 100%;
 	max-width: 100%;
-	background-image: url('images/sybil.png');
+	height: 100%;
+	background-image: url('images/sybil-2.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -283,7 +289,7 @@ body:after{
 #foodster{
 	width: 100%;
 	max-width: 100%;
-	background-image: url('images/foodster.png');
+	background-image: url('images/foodster-3.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -304,7 +310,7 @@ body:after{
 #powerup{
 	width: 100%;
 	max-width: 100%;
-	background-image: url('images/powerup.png');
+	background-image: url('images/powerup-2.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -312,25 +318,24 @@ body:after{
 
 .row{
 	margin-top: 3.75%;
-	width: 100%;
+	width: 81vw;
 	display: flex;
 	flex-wrap: wrap;
+	height: 22.5vw;
 }
 
 .column-1{
-	width: 50%;
-	padding-right: 1.75%;
+	width: 27vw;
 }
 
-.column-2{
-	width: 50%;
-	padding-left: 1.75%;
+.column-3{
+
 }
 
 .info{
 	 box-sizing: border-box;
     height: 100%;
-    padding: 9%;
+    padding: 10%;
     position: absolute;
     top: -100%;
     transition: top 0.3s ease 0s;
@@ -349,15 +354,15 @@ body:after{
 }
 
 #info-long{
-    padding: 6% 5.5% 5.5% 5.5%;
+    padding: 5% 5.5% 5.5% 5.5%;
 }
 
 #see-long{
-	padding: 6.5% 6.8%;
+	padding: 5.25% 6.8%;
 }
 
 #arrow-long{
-	margin: 6.5% 3.5%;
+	margin: 5.25% 3.5%;
 }
 
 .dates{
@@ -365,14 +370,14 @@ body:after{
 	font-weight: 500;
 	color: #aaaaaa;
 	text-transform: uppercase;
-	font-size: 12pt;
+	font-size: 10pt;
 }
 
 .project-title{
 	margin-top: 2%;
 	font-weight: 600;
 	color: #000;
-	font-size: 15pt;
+	font-size: 14pt;
 }
 
 .project-title-daily{
@@ -386,7 +391,7 @@ body:after{
 	margin-top: 7.5%;
 	font-weight: 400;
 	color: #000;
-	font-size: 11.5pt;
+	font-size: 10.25pt;
 	line-height: 1.65em;
 }
 
@@ -394,11 +399,11 @@ body:after{
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	padding: 7.5% 13%;
+	padding: 9.75% 18.5%;
 	text-transform: uppercase;
 	font-weight: 600;
 	color: #f48da0;
-	font-size: 12pt;
+	font-size: 11.5pt;
 	letter-spacing: 0.05em;
 }
 
@@ -407,9 +412,9 @@ body:after{
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	width: 22.3px;
+	width: 20px;
 	height: auto;
-	margin: 7.25% 6.5%;
+	margin: 9.5% 9.5%;
 }
 
 .overlay{
@@ -427,7 +432,7 @@ body:after{
 #hackduke{
 	width: 100%;
 	max-width: 100%;
-	background-image: url('images/hackduke.png');
+	background-image: url('images/hackduke-2.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -471,17 +476,71 @@ body:after{
 
 }
 
-@media (max-width: 780px) {
-	.headline{
-		font-size: 10vh;
+@media (max-width: 855px) {
+	.dates{
+		font-size: 10pt;
 	}
 
-	#subtitle{
-		font-size: 6vh;
+	.column-1{
+		width: 40.5vw;
 	}
-	.button{
-	    height: 8vw;
-	    width: 8vw;
+
+	.project-title{
+		font-size: 12pt;
+	}
+
+	.project-subtitle{
+		font-size: 9pt;
+	}
+
+	.banners{
+		height: 40.5vw;
+	}
+
+	.row{
+		height: 78vw;
+	}
+
+	.banner-container{
+		height: 40.5vw;
+	}
+
+	#hide{
+		display:none;
+	}
+
+	#short-row{
+		height: 37.5vw;
+	}
+
+	.project-title-daily{
+		font-size: 12pt;
+	}
+
+	#info-long{
+		padding: 3% 5.5% 2.5% 5.5%;
+	}
+
+	#see-long{
+		padding: 4.25% 9%;
+		font-size: 10pt;
+	}
+
+	#arrow-long{
+		margin: 4% 3.5%;
+		width: 20px;
+	}
+
+	#title{
+		font-size: 25pt;
+	}
+
+	.extra-light{
+		font-size: 15px;
+	}
+
+	.navigation a{
+		font-size: 10pt;
 	}
 }
 
@@ -496,14 +555,78 @@ body:after{
 		padding-right: 0;
 	}
 
-	.column-2{
-		width: 100%;
-		padding-left: 0;
-		padding-top: 2.5%;
+	.dates{
+		font-size: 10pt;
+	}
+
+	.project-title{
+		font-size: 14pt;
+	}
+
+	.project-subtitle{
+		font-size: 10pt;
+	}
+
+	.banners{
+		height: 50vw;
+	}
+
+	.row{
+		height: 195vw;
+	}
+
+	.banner-container{
+		height: 50vw;
+	}
+
+	#hide{
+		display:none;
+	}
+
+	#short-row{
+		height: 95vw;
+	}
+
+	.project-title-daily{
+		font-size: 14pt;
+	}
+
+	#daily-ui-row{
+		height: 25vw;
+	}
+
+	#nothing-dailyui{
+		height: 25vw;
+	}
+
+	#info-long{
+		padding: 9% 10% 2.5% 10%;
+	}
+
+	#see-long{
+		padding: 11% 15%;
+		font-size: 10pt;
+	}
+
+	#arrow-long{
+		margin: 10.7% 8%;
+		width: 20px;
+	}
+
+	#title{
+		font-size: 20pt;
+	}
+
+	.extra-light{
+		font-size: 15px;
+	}
+
+	.navigation a{
+		font-size: 10pt;
 	}
 }
 
-@media (max-width: 565px) {
+@media (max-width: 480px) {
 	.headline{
 		font-size: 10vh;
 	}
@@ -512,31 +635,87 @@ body:after{
 		font-size: 6vh;
 	}
 
-	#quicksand{
-		font-size: 6.5vh;
+	.navigation a{
+		font-size: 9pt;
 	}
 
-	.button{
-	    height: 10vw;
-	    width: 10vw;
+	.logo{
+		font-size: 15pt;
+	}
+	.project-title{
+		font-size: 12pt;
+	}
+
+	.project-subtitle{
+		font-size: 8pt;
+	}
+
+	.project-title-daily{
+		font-size: 12pt;
+	}
+
+		#see-long{
+		padding: 9% 15%;
+		font-size: 10pt;
+	}
+
+	#arrow-long{
+		margin: 8.7% 8%;
+		width: 20px;
 	}
 }
 
-@media (max-width: 415px) {
-	.headline{
-		font-size: 8.5vh;
+@media (max-width: 385px) {
+	.navigation a{
+		font-size: 9pt;
 	}
 
-	#subtitle{
-		font-size: 4.5vh;
+	.logo{
+		font-size: 11pt;
+		padding-top: 1.75%;
 	}
 
-	#quicksand{
-		font-size: 5vh;
+	.dates{
+		font-size: 9pt;
+	}
+	.project-title{
+		font-size: 10pt;
 	}
 
-	.button{
-	    height: 10vw;
-	    width: 10vw;
+	.project-subtitle{
+		font-size: 8pt;
+	}
+
+	.see-more{
+		font-size: 8pt;
+	}
+
+	.project-title-daily{
+		font-size: 10pt;
+	}
+
+		#see-long{
+		padding: 9% 15%;
+		font-size: 8pt;
+	}
+
+	#title{
+		font-size: 15pt;
+	}
+
+	.extra-light{
+		font-size: 12px;
+	}
+
+	.navigation{
+		padding-top: 1.2%;
+	}
+
+	.navigation a{
+		font-size: 8pt;
+	}
+
+	.footer{
+		font-size: 8pt;
 	}
 }
