@@ -111,7 +111,8 @@ body:after{
 	width: 100%;
 	max-width: 100%;
     height: 12.25vw;
-    	background-image: url('images/daily ui banner small.png');
+/*    	background-image: url('images/daily ui banner small.png');*/
+background-image: url('images/daily-ui-3.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
