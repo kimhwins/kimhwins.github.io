@@ -271,7 +271,7 @@ background-image: url('images/daily-ui-3.png');
 #iqvia{
 	width: 100%;
 	max-width: 100%;
-	background-image: url('images/iqvia-4.jpg');
+	background-image: url('images/iqvia-6.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -291,6 +291,15 @@ background-image: url('images/daily-ui-3.png');
 	width: 100%;
 	max-width: 100%;
 	background-image: url('images/foodster-3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#steam{
+	width: 100%;
+	max-width: 100%;
+	background-image: url('images/steam02.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
