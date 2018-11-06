@@ -56,13 +56,13 @@ body:after{
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
 	font-size: 3.5vh;
-	color: #f48da0;
+	color: #FAB5BE;
 	font-family: "Kollektif-Bold", sans-serif;
 	z-index: 3;
 }
 
 .logo a{
-	color: #f48da0;
+	color: #FAB5BE;
 	text-decoration: none;
 }
 
@@ -78,12 +78,20 @@ body:after{
 .navigation a{
 	font-family: 'Kollektif', sans-serif;
 	color: #000;
-	font-size: 12pt;
+	font-size: 11pt;
 	text-decoration: none;
 	letter-spacing: 0.06em;
-	margin: 0 0.5vw 0 4.75vw;
+	margin: 0 0.5vw 0 4vw;
 	text-transform: uppercase;
 	font-weight: 500;
+}
+
+#non-select{
+	color: #bebebe;
+}
+
+.last-nav{
+	margin-right: 0.5vw;
 }
 
 .float{
@@ -151,7 +159,7 @@ background-image: url('images/daily-ui-3.png');
 	margin-top: 2.25vh;
 	font-weight: 500;
 	font-size: 22px;
-	color: #f48da0;
+	color: #FAB5BE;;
 }
 
 .light{
@@ -305,6 +313,15 @@ background-image: url('images/daily-ui-3.png');
     background-size: cover;
 }
 
+#storia{
+	width: 100%;
+	max-width: 100%;
+	background-image: url('images/storia.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .banner-container:hover {
 	box-shadow: 0px 10px 49px rgba(0,0,0,0.08);
 }
@@ -354,7 +371,7 @@ background-image: url('images/daily-ui-3.png');
     color: #000;
     border-style: solid none none none;
     border-width: 5px;
-    border-color: #f48da0;
+    border-color: #FAB5BE;;
 }
 
 .info a{
@@ -412,7 +429,7 @@ background-image: url('images/daily-ui-3.png');
 	padding: 9.75% 18.5%;
 	text-transform: uppercase;
 	font-weight: 600;
-	color: #f48da0;
+	color: #FAB5BE;;
 	font-size: 11.5pt;
 	letter-spacing: 0.05em;
 }
@@ -460,17 +477,15 @@ background-image: url('images/daily-ui-3.png');
 .rectangle {
 	height: 3.5px;
 	width: 45px;
-	background-color: #f48da0;
+	background-color: #FAB5BE;;
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 2%;
+	margin: 6% auto 2% auto;
 }
 
 .footer{
 	text-align: center;
-	padding: 0.5% 1.5% 1.5% 1.5%;
-	margin-bottom: 1.5%;
+ padding: 0.5% 1.5% 3% 1.5%;
+
 	font-size: 11pt;
 	letter-spacing: 0.02em;
 }
@@ -484,6 +499,56 @@ background-image: url('images/daily-ui-3.png');
 
 	padding-left: 0.3%;
 
+}
+
+.daily-ui-text{
+	padding-top: 37%;
+/*	font-family: 'Kollektif', sans-serif;*/
+	font-family: 'Montserrat';
+	letter-spacing: 0.02em;
+/*	color: #f48da0;*/
+	text-align: center;
+}
+
+.du-button{
+	margin: 10% 0% -3% 0;
+	padding: 4% 10%;
+	background-color: white;
+	border: solid 2.5px #FAB5BE;;
+	text-decoration: none;
+	font-family: 'Kollektif', sans-serif;
+	color: #FAB5BE;;
+	letter-spacing: 0.02em;
+	font-size: 12pt;
+	transition: transform 0.2s;
+
+/*	position: absolute;
+	right: 0;*/
+}
+
+.du-button:hover{
+	cursor: pointer;
+}
+
+
+#center:hover{
+	transform: translate(0, -5px);
+
+/*	position: absolute;
+	right: 0;*/
+}
+
+#center{
+	text-align: center;
+	margin-top: 11%;
+	transition: transform 0.4s;
+}
+
+#center:hover{
+	transform: translate(0, -5px);
+
+/*	position: absolute;
+	right: 0;*/
 }
 
 @media (max-width: 855px) {
