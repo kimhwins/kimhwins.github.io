@@ -1,290 +1,385 @@
-<!doctype html>
+<!DOCTYPE html>
+
 
 <html lang="en">
-	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129139358-1"></script>
-		<script>
-  			window.dataLayer = window.dataLayer || [];
-  			function gtag(){dataLayer.push(arguments);}
-  			gtag('js', new Date());
 
-  			gtag('config', 'UA-129139358-1');
-		</script>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129139358-1">
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    gtag("config", "UA-129139358-1");
 
-		<title>Kim Huynh</title>
-		
-		<link rel="stylesheet" href="style.css">
+    import AOS from "aos";
+    import "aos/dist/aos.css";
 
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+    // init AOS animation
+    window.addEventListener("load", () => {
+      AOS.init({
+        duration: 1000,
+        offset: 100,
+        startEvent: 'load'
+      });
+    });
 
-		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-		<link rel="icon" href="http://www.kimhuynh.net/favicon.ico?v=2" />
+    document.addEventListener("DOMContentLoaded", function () {
+      setTimeout(function () { AOS.refresh(); }, 500);
+    });
 
-	</head>
+  </script>
 
-	<body>
-			<div class="navigation">
-								<div class="float">
-					<div class="nav-button"><a href="#work">Work</a></div>
-				</div>
-				<div class="float">
-					<div class="nav-button"><a id="non-select" href="http://www.kimhuynh.net/about-me/">About Me</a></div>
-				</div>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-				<div class="float">
-					<div class="nav-button"><a id="non-select" class="last-nav" href="https://goo.gl/7mjuQz" target="_blank">Resume</a></div>
-				</div>
+  <title>Kim Huynh</title>
 
-			</div>
+  <link rel="stylesheet" href="style copy.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-			<div class="logo">
-				<a href="http://www.kimhuynh.net">Kim Huynh</a> 
-			</div>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet" />
 
-		<div class="header">
+  <link rel="shortcut icon" type="image/x-icon" href="logo.ico" />
+  <!-- <link rel="icon" href="http://www.kimhuynh.net/favicon.ico?v=2" /> -->
+  <link rel="icon" href="logo.ico" />
+</head>
 
-			<div class="headline">
-				<div class="wrapper fadein">
-					<div class="extra-light text">HI THERE!</div>
-				</div>
-				<div id="title" class="wrapper fadein"> 
-					<div>I&#8217;m Kim,<br/>daydreamer & designer at FB</div>
-				</div>
+<body>
 
-				
-<!-- 				<div id="social-media">
-					<a href="https://twitter.com/verechii" id="twitter" class="button" target="_blank"></a> 
-					<a href="https://www.linkedin.com/in/kimberly-b-huynh/" id="linkedin" class="button" target="_blank"></a>
-					<a href="https://github.com/kimhwins" id="github" class="button" target="_blank"></a>
-					<a href="mailto:kimberly.b.huynh@gmail.com" id="email" class="button" target="_blank"></a>
-				</div> -->
-				
-			</div>
-		</div>
-		<div id="work">
-			<div class="row">
-				<div class="column-1">
-					<div class="banner-container">
-						<div id="storia" class="banners"></div>
-						<div class="info">
-							<a href="http://www.kimhuynh.net/storia">
-								<span class="dates">FALL 2018</span>
-								<div class="project-title">Storia</div>
-								<div class="project-subtitle">Journaling web app UX design that aims to help busy people organize their life's story.</div>
-								<div class="see-more">See More</div>
-								<img class="right-arrow" src="images/right-arrow.svg">
-								<div class="overlay"></div>
-							</a>
+  <div id="all-the-top-stuff">
+  <div class="navigation">
+    <div class="nav-button float"><a href="#work">Work</a></div>
+    <div class="nav-button float"><a id="non-select" href="http://www.kimhuynh.net/play/">Play</a></div>
+    <div class="nav-button float"><a id="non-select" href="http://www.kimhuynh.net/about-me/">About</a></div>
+    <div class="nav-button float">
+      <a id="non-select" class="last-nav" href="https://goo.gl/7mjuQz" target="_blank">Resume</a>
+    </div>
+  </div>
 
-						</div>
+  <div class="logo">
+    <a href="http://www.kimhuynh.net"><img src="images/logo.svg" alt="Kim Huynh"></a>
+  </div>
 
-					</div>
-				</div>
+  <!-- LOGO WITH NAME ON HOVER -->
+  <!-- <ul id="side-menu" class="logo">
+      <li>
+        <i><a href="http://www.kimhuynh.net"><img src="images/logo.svg" alt="Kim Huynh"></a></i>
+      </li>
+      <li>
+        <div class="side-menu__label"><a href="http://www.kimhuynh.net">Kim Huynh</a></div>
+      </li>
+    </ul> -->
 
-				<div class="column-1">
-					<div class="banner-container">
-						<div id="steam" class="banners"></div>
-						<div class="info">
-							<a href="http://www.kimhuynh.net/steam">
-								<span class="dates">SEPT 2018</span>
-								<div class="project-title">Steam Redesign Concept</div>
-								<div class="project-subtitle">Redesign concept of Steam's game page.</div>
-								<div class="see-more">See More</div>
-								<img class="right-arrow" src="images/right-arrow.svg">
-								<div class="overlay"></div>
-							</a>
+  <div class="header">
+    <img class="hero fadein" src="images/No_Attention 3.png">
+      <div class="headline">
+        <div class="wrapper">
+          <div class="extra-light figma-2" data-aos="fade-down" id="first" style="color: #E18490; font-size: 21.684px;">HI
+            THERE!</div>
+        </div>
+        <div id="title">
+          <div data-aos="fade-down" data-aos-delay="800">I&#8217;m <span class="highlight highlight-show">Kim</span></div>
+        </div>
+        <div data-aos="fade-down" data-aos-delay="2250" class="headline-2" id="figma">doodler, <br />daydreamer,<br /> &
+          product designer</div>
+                  <!-- <br /> -->
+        <div data-aos="fade-down" data-aos-delay="3000" class="headline-2" style="padding-top:74px;"> Currently crafting
+          experiences @ <span style="font-family: 'Kollektif-Bold';">Facebook </span><span
+            style="display:inline-block; vertical-align: middle;"><img style="margin-left: 2px;"
+              src="images/image 7.svg"></span></div>
 
-						</div>
-
-					</div>
-				</div>
-
-				<div class="column-1">
-					<div class="banner-container">
-						<div id="sybil" class="banners"></div>
-						<div class="info">
-							<a href="http://www.kimhuynh.net/sybil">
-								<span class="dates">SUMMER 2018</span>
-								<div class="project-title">Sybil Voice Assistant</div>
-								<div class="project-subtitle">Voice assistant app concept for IQVIA, with Google Assistant Action demo and interactive animated prototype. </div>
-								<div class="see-more">See More</div>
-								<img class="right-arrow" src="images/right-arrow.svg">
-								<div class="overlay"></div>
-							</a>
-
-						</div>
-					</div>
-				</div>
-				<div class="column-1">
-					<div class="banner-container">
-						<div id="iqvia" class="banners"></div>
-						<div class="info">
-							<a href="http://www.kimhuynh.net/iqvia">
-								<span class="dates">SUMMER 2018</span>
-								<div class="project-title">UI/UX @ IQVIA Design Studio</div>
-								<div class="project-subtitle">Interface design for IQVIA's new virtual clinical trial platform Study Hub and other apps using the Apollo design system.</div>
-								<div class="see-more">See More</div>
-								<img class="right-arrow" src="images/right-arrow.svg">
-								<div class="overlay"></div>
-							</a>
-
-						</div>
-					</div>
-				</div>
-
-			</div>
-
-<!-- 			WHAT IS THIS -->
-
-			<div class="row">
-								<div class="column-1">
-					<div class="banner-container">
-						<div id="iqvia" class="banners"></div>
-						<div class="info">
-							<a href="http://www.kimhuynh.net/iqvia">
-								<span class="dates">SUMMER 2018</span>
-								<div class="project-title">UI/UX @ IQVIA Design Studio</div>
-								<div class="project-subtitle">Interface design for IQVIA's new virtual clinical trial platform Study Hub and other apps using the Apollo design system.</div>
-								<div class="see-more">See More</div>
-								<img class="right-arrow" src="images/right-arrow.svg">
-								<div class="overlay"></div>
-							</a>
-
-						</div>
-					</div>
-				</div>
+        <!-- <div data-aos="fade-down"  data-aos-delay="2400" class="headline-2" style="margin-top: 5%; font-size: 1.2em;"> Currently crafting experiences @ <span style="font-family: 'Kollektif-Bold';">Facebook  </span><span style="display:inline-block; vertical-align: middle;"><img style="margin-left: 5px;" src="images/image 7.svg"></span></div> -->
+      
+      </div>
+  </div>
 
 
-				<div class="column-1">
-					<div class="banner-container">
-						<div id="foodster" class="banners"></div>
-						<div class="info">
-							<a href="http://www.kimhuynh.net/foodster">
-								<span class="dates">MAY 2018</span>
-								<div class="project-title">Foodster</div>
-								<div class="project-subtitle">Adobe XD Challenge restaurant app design.</div>
-								<div class="see-more">See More</div>
-								<img class="right-arrow" src="images/right-arrow.svg">
-								<div class="overlay"></div>
-							</a>
+  <div data-aos="fade" data-aos-delay="300" class="scroll-downs">
+    <div id="scroll" class="mousey">
+      <div class="scroller"></div>
+    </div>
+  </div>
+  </div>
 
-						</div>
+  <div data-aos="fade-down" class="intro-container">
+    <img id="joycon" src="images/joycon.png">
+    <img id="controller" src="images/controller.png">
+    <div class="intro-box">I’m a designer @ Facebook Gaming Play, <br> <span style="font-family: Kollektif; " ;>where I
+        work on bringing more fun & games to everyone!</span></div>
+    <div class="headline-2" id="intro-box-subheader">While I can’t show anything yet, check out some past work below:
+    </div>
+  </div>
+  
 
-					</div>
-				</div>
+  <div class="half-row" data-aos="fade-down">
+    <div class="column-50" id="work">
+      <img class="flourishes" id="left-sparkle" src="images/left sparkle.png">
+      <img class="flourishes" style="bottom:-20px; right: 0" src="images/fb flourish.png">
+      <img class="row-img" src="images/new marketplace mocks.png">
+    </div>
+    <div class="column-50 row-text">
+      <img class="row-icon" src="images/marketplace.png">
+      <h1 class="row-h1">Facebook</h1>
+      <div class="headline-2" id="row-body">As a designer on Marketplace, I helped sellers succeed with promotions and
+        incentives</div>
+      <div style="padding-top: 74px; width:fit-content; display: inline-block;">
+        <a href="http://www.kimhuynh.net/marketplace/" class="row-learnmore float-2">Learn more
+          <div style="display:inline-block; vertical-align: middle;" class="new-arrow"><img style="margin-left: 2px;"
+              src="images/new arrow.svg"></div>
+        </a>
+      </div>
+    </div>
+  </div>
 
-								<div class="column-1">
-					<div class="banner-container">
-						<div id="league" class="banners"></div>
-						<div class="info">
-							<a href="http://www.kimhuynh.net/google">
-								<span class="dates">JANUARY 2019</span>
-								<div class="project-title">Student Org Discovery App</div>
-								<div class="project-subtitle">Design challenge concept helping students browse, search, and create student orgs.</div>
-								<div class="see-more">See More</div>
-								<img class="right-arrow" src="images/right-arrow.svg">
-								<div class="overlay"></div>
-							</a>
+  <div class="half-row-2" data-aos="fade-down">
 
-						</div>
+    <div class="column-50 row-text-2">
+      <img class="row-icon" src="images/adobe.png">
+      <h1 class="row-h1">Adobe</h1>
+      <div class="headline-2" id="row-body">I interned on the Analytics team, redesigning and streamlining the way users
+        build data viz</div>
+      <div style="padding-top: 74px; width:fit-content; display: inline-block;">
+        <a href="http://www.kimhuynh.net/adobe/" class="row-learnmore float-2">Learn more
+          <div style="display:inline-block; vertical-align: middle;" class="new-arrow"><img style="margin-left: 2px;"
+              src="images/new arrow.svg"></div>
+        </a>
+      </div>
+    </div>
+    <div class="column-50">
+            <img class="flourishes" id="right-sparkle" src="images/right sparkle.png">
+            <img class="flourishes" style="bottom:-20px; right: -43px;" src="images/adobe flourish.png">
+      <img class="row-img-2" src="images/new adobe mocks.png">
+    </div>
+  </div>
 
-					</div>
-				</div>
+  <div class="half-row-2" data-aos="fade-down">
+    <div class="column-50">
+      <img class="flourishes" id="left-sparkle" src="images/left sparkle.png">
+      <img class="flourishes" style="bottom:-18px; right: 28px;" src="images/storia flourish.png">
+      <img class="row-img" src="images/new storia mocks.png">
+    </div>
+    <div class="column-50 row-text">
+      <img class="row-icon" src="images/storia icon.png">
+      <h1 class="row-h1">Storia</h1>
+      <div class="headline-2" id="row-body">I designed a journaling app concept to inspire busy people to write</div>
+      <div style="padding-top: 74px; width:fit-content; display: inline-block;">
+        <a href="http://www.kimhuynh.net/storia/" class="row-learnmore float-2">Learn more
+          <div style="display:inline-block; vertical-align: middle;" class="new-arrow"><img style="margin-left: 2px;"
+              src="images/new arrow.svg"></div>
+        </a>
+      </div>
+    </div>
+  </div>
 
+  <div class="half-row-2" data-aos="fade-down" style="padding-bottom: 150px;">
 
+    <div class="column-50 row-text-2">
+      <img class="row-icon" src="images/empactful.png">
+      <h1 class="row-h1">Empactful</h1>
+      <div class="headline-2" id="row-body">While in uni, I designed for a student-made fintech startup focused on
+        investing in social good</div>
+      <div style="padding-top: 74px; width:fit-content; display: inline-block;">
+        <a href="http://www.kimhuynh.net/empactful/" class="row-learnmore float-2">Learn more
+          <div style="display:inline-block; vertical-align: middle;" class="new-arrow"><img style="margin-left: 2px;"
+              src="images/new arrow.svg"></div>
+        </a>
+      </div>
+    </div>
+    <div class="column-50">
+                  <img class="flourishes" id="right-sparkle" src="images/right sparkle.png">
+                  <img class="flourishes" style="bottom:-5px; right: -43px;" src="images/empactful flourish.png">
+      <img class="row-img-2" src="images/new empactful mocks.png">
+    </div>
+  </div>
 
-			</div>
+  <div class="half-row-2">
+    <div class="column-33" data-aos="fade-down">
+      <img class="img-33" src="images/campus clubs shadow.png">
+      <div style="padding: 0 20px;">
+        <div class="subheader-33">UI & UX Design</div>
+        <div class="header-33">Campus Clubs</div>
+        <div class="body-33">Design challenge helping students discover and create clubs</div>
+      </div>
+    </div>
 
-			<div class="row">
-
-				<div class="column-1">
-					<div class="banner-container">
-
-						<div id="powerup" class="banners"></div>
-						<div class="info">
-							<a href="http://www.kimhuynh.net/powerup">
-								<span class="dates">SUMMER 2017</span>
-								<div class="project-title">UI/UX @ AnitaB.org</div>
-								<div class="project-subtitle">Redesign and expansion of an open source female empowerment mobile game for Google Summer of Code.</div>
-								<div class="see-more">See More</div>
-								<img class="right-arrow" src="images/right-arrow.svg">
-								<div class="overlay"></div>
-							</a>
-
-						</div>
-
-					</div>
-				</div>
-
-				<div class="column-1">
-					<div class="banner-container">
-						<div id="hackduke" class="banners"></div>
-						<div class="info">
-							<a href="http://www.kimhuynh.net/hackduke">
-								<span class="dates">FALL 2017</span>
-								<div class="project-title">HackDuke</div>
-								<div class="project-subtitle">Design for Duke's annual social good hackathon.</div>
-								<div class="see-more">See More</div>
-								<img class="right-arrow" src="images/right-arrow.svg">
-								<div class="overlay"></div>
-							</a>
-
-						</div>
-
-					</div>
-				</div>
-
-				<div class="column-1">
-					<div class="daily-ui-text">Want to see more of my work?</div>
-			<div id="center"><a href="http://www.kimhuynh.net/daily-ui" class="du-button">DAILY UI</a></div>
-<!-- 					<div class="banner-container">
-						<div id="hackduke" class="banners"></div>
-						<div class="info">
-							<a href="http://www.kimhuynh.net/hackduke">
-								<span class="dates">FALL 2017</span>
-								<div class="project-title">HackDuke</div>
-								<div class="project-subtitle">Design for Duke's annual social good hackathon.</div>
-								<div class="see-more">See More</div>
-								<img class="right-arrow" src="images/right-arrow.svg">
-								<div class="overlay"></div>
-							</a>
-
-						</div>
-
-					</div> -->
-				</div>
-			</div>
+        <div class="column-33" data-aos="fade-down" data-aos-delay="200">
+          <img class="img-33" src="images/steam shadow.png">
+          <div style="padding: 0 20px;">
+            <div class="subheader-33">UI Design</div>
+            <div class="header-33">Steam Concept</div>
+            <div class="body-33">Personal exploration of a redesigned Steam game page</div>
+          </div>
+        </div>
 
 
-<!-- 
-			<div class="row" id="daily-ui-row">
-				<div class="banner-container" id="daily-ui-row">
-					<div id="nothing-dailyui" class="banners"></div>
-					<div class="info" id="info-long">
-							<a href="http://www.kimhuynh.net/daily-ui">
-								<span class="dates">ONGOING</span>
-								<div class="project-title-daily">Daily UI Challenge</div>
-								<div class="see-more" id="see-long">See More</div>
-								<img class="right-arrow" id="arrow-long" src="images/right-arrow.svg">
-								<div class="overlay"></div>
-							</a>
-					</div>
-				</div>
-			</div> -->
+            <div class="column-33" data-aos="fade-down" data-aos-delay="400" style="margin-right: 0;">
+              <img class="img-33" src="images/hackduke shadow.png">
+              <div style="padding: 0 20px;">
+                <div class="subheader-33">Graphic Design</div>
+                <div class="header-33">HackDuke</div>
+                <div class="body-33">Illustrations & branding for my university’s social good hackathon</div>
+              </div>
+            </div>
+  </div>
 
-<!-- 			<div class="daily-ui-text">Want to see more of my work?</div>
-			<div id="center"><a href="http://www.kimhuynh.net/daily-ui" class="du-button">DAILY UI</a></div> -->
+  <div class="closing" data-aos="fade-down">
+    <hr >
+    <div>
+      <div style="padding-top:30px; letter-spacing: 0.48px; width: fit-content; position: relative;">
 
-			
-		</div>
+        Let’s work together — come say <a
+          href="mailto: kimberly.b.huynh@gmail.com" style="color:#E18490; text-decoration: none;"
+          class="float-3"><span style="position: relative;">hi!<img src="images/hi.png" id="hi-sparkle"></span></a></div>
+      <div style="padding-top: 12px;"><a href="mailto:kimberly.b.huynh@gmail.com" class="float-3"><img
+            src="images/mail.png" style="display:inline-block; padding-right: 25px;"></a>
+        <a class="float-3" href="https://www.linkedin.com/in/kimberly-b-huynh/"><img src="images/linkedin.png"
+            style="display:inline-block"></a>
+      </div>
+            <div class="ps"><span style="font-family: Kollektif-Bold;">ps.</span> I built this site myself in html, css, & a wee bit of js!</div>
+    </div>
+    <!-- <button onclick="topFunction()" class="float-3 scroll-top" ><img src="images/top.svg"></button> -->
+    
+  </div>
 
-		<div class="rectangle"></div>
-		<div class="footer text">
-			<span>Built from scratch!</span> <img class="heart" src="images/heart.png">
-		</div>
-	</body>
+      <div><button class="float-3 scroll-top"><img src="images/top.svg"></button></div>
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    AOS.init({
+      // Global settings:
+      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+      initClassName: 'aos-init', // class applied after initialization
+      animatedClassName: 'aos-animate', // class applied on animation
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: 80, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 1250, // values from 0 to 3000, with step 50ms
+      easing: 'ease', // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+    });
+    var myVar;
+
+    function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+    }
+
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      setTimeout(function () { AOS.refresh(); }, 500);
+    });
+
+
+
+
+    // // Get the button:
+    //   let mybutton = document.getElementByClassName("scroll-top");
+
+    //   // When the user scrolls down 20px from the top of the document, show the button
+    //   window.onscroll = function () { scrollFunction() };
+
+    //   function scrollFunction() {
+    //     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    //       mybutton.style.display = "block";
+    //     } else {
+    //       mybutton.style.display = "none";
+    //     }
+    //   }
+
+    //   // When the user clicks on the button, scroll to the top of the document
+    //   function topFunction() {
+    //     document.body.scrollTop = 0; // For Safari
+    //     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    //   }
+
+
+
+
+
+
+      // // We select the element we want to target
+      //   var target = document.querySelector(".scroll-top-container");
+
+      //   var scrollToTopBtn = document.querySelector(".scroll-top");
+      //   var rootElement = document.documentElement;
+
+      //   // Next we want to create a function that will be called when that element is intersected
+      //   function callback(entries, observer) {
+      //     // The callback will return an array of entries, even if you are only observing a single item
+      //     entries.forEach((entry) => {
+      //       if (entry.isIntersecting) {
+      //         // Show button
+      //         scrollToTopBtn.classList.add("showBtn");
+      //       } else {
+      //         // Hide button
+      //         scrollToTopBtn.classList.remove("showBtn");
+      //       }
+      //     });
+      //   }
+
+      //   function scrollToTop() {
+      //     rootElement.scrollTo({
+      //       top: 0,
+      //       behavior: "smooth"
+      //     });
+      //   }
+      //   scrollToTopBtn.addEventListener("click", scrollToTop);
+
+      //   // Next we instantiate the observer with the function we created above. This takes an optional configuration
+      //   // object that we will use in the other examples.
+      //   let observer = new IntersectionObserver(callback);
+      //   // Finally start observing the target element
+      //   observer.observe(target);
+
+
+      var scrollToTopBtn = document.querySelector(".scroll-top");
+        var rootElement = document.documentElement;
+
+        function handleScroll() {
+          // Do something on scroll
+          var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
+          if (rootElement.scrollTop / scrollTotal > 0.15) {
+            // Show button
+            scrollToTopBtn.classList.add("showBtn");
+          } else {
+            // Hide button
+            scrollToTopBtn.classList.remove("showBtn");
+          }
+        }
+
+        function scrollToTop() {
+          // Scroll to top logic
+          rootElement.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+        }
+        scrollToTopBtn.addEventListener("click", scrollToTop);
+        document.addEventListener("scroll", handleScroll);
+
+
+
+
+  </script>
+</body>
+
 </html>
